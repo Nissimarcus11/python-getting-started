@@ -17,3 +17,7 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, "db.html", {"greetings": greetings})
+
+
+def home(request):
+    return render(request, 'home.html')
